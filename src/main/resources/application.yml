@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: database_schema
+
+  config:
+    import: optional:file:.env[.properties],optional:file:../.env[.properties]
+
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
