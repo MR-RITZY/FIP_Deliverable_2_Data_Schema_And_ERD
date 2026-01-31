@@ -64,6 +64,7 @@ What is **not included yet**:
 
 ## 🧩 Entity Relationships (High Level)
 
+```markdown
 School
 ├── Faculty
 │    └── Department
@@ -73,7 +74,7 @@ School
 └── Operational Unit
 └── Operational Role
 └── Non-Academic Staff
-
+```
 ---
 
 ## 🔗 Many-to-Many Relationships
